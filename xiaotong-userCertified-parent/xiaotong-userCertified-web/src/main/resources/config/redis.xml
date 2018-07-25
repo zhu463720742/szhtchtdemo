@@ -1,0 +1,44 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+		">
+
+		<!-- 实现类Jedis -->
+<!-- 		<bean id="jedis" class="redis.clients.jedis.Jedis">
+			<constructor-arg value="${redis.master.host0}" name="host"/>
+			<constructor-arg value="${redis.master.port0}" name="port"/>
+		</bean>	 -->
+		<!-- redis数据源 -->
+
+	<bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
+		<!--最大空闲连接数 -->
+		<property name="maxIdle" value="${redis.maxIdle}" />
+		<!--最大连接数 -->
+		<property name="maxTotal" value="${redis.maxTotal}" />
+		<!--初始化连接数 -->
+		<property name="minIdle" value="${redis.minIdle}" />
+		<!--最大等待时间 -->
+		<property name="maxWaitMillis" value="${redis.maxWaitMillis}"></property>
+		<property name="testOnBorrow" value="${redis.testOnBorrow}" />
+		<property name="testOnReturn" value="${redis.testOnReturn}" />
+		<property name="testWhileIdle" value="${redis.testWhileIdle}" />
+	</bean>
+
+	<!-- redis连接池 -->
+	<bean id="shardedJedisPool" class="redis.clients.jedis.ShardedJedisPool"
+		scope="singleton">
+		<constructor-arg index="0" ref="jedisPoolConfig" />
+		<constructor-arg index="1">
+			<list>
+				<bean class="redis.clients.jedis.JedisShardInfo">
+					<!-- <constructor-arg name="host" value="10.240.3.2" /> -->
+					<constructor-arg name="host" value="${redis.master.host0}" />
+					<constructor-arg name="port" value="${redis.master.port0}" />
+					<property name="password" value="${redis.master.password}" />
+				</bean>
+			</list>
+		</constructor-arg>
+	</bean>
+
+</beans>

@@ -1,0 +1,10 @@
+mysql.driver=com.mysql.jdbc.Driver
+mysql.url=jdbc:mysql://192.168.1.252:3306/xiaotong_shopping
+mysql.username=root
+mysql.password=root
+
+jdbc.initialSize=0
+jdbc.maxActive=20
+jdbc.maxIdle=20
+jdbc.minIdle=1
+jdbc.maxWait=60000

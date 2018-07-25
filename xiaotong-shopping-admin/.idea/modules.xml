@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/shopping-admin/shopping-admin.iml" filepath="$PROJECT_DIR$/shopping-admin/shopping-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shopping-admin-bean/shopping-admin-bean.iml" filepath="$PROJECT_DIR$/shopping-admin-bean/shopping-admin-bean.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shopping-admin-dao/shopping-admin-dao.iml" filepath="$PROJECT_DIR$/shopping-admin-dao/shopping-admin-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shopping-admin-interface/shopping-admin-interface.iml" filepath="$PROJECT_DIR$/shopping-admin-interface/shopping-admin-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shopping-admin-service/shopping-admin-service.iml" filepath="$PROJECT_DIR$/shopping-admin-service/shopping-admin-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/xiaotong-shopping-admin.iml" filepath="$PROJECT_DIR$/.idea/xiaotong-shopping-admin.iml" />
+    </modules>
+  </component>
+</project>

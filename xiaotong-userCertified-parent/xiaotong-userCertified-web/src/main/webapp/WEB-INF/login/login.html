@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>登录页面</title>
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="../css/x-admin.css" media="all">
+</head>
+
+<body style="background-image: url(../images/login_background.jpg); background-repeat:no-repeat; background-size:100% 126%;-moz-background-size:100% 126%;">
+	<div style="margin-left: 40%;margin-top: 10%; ">
+				<img src="../images/logo.png" alt="">
+	</div>
+	<div class="x-box" style="height:20%;width: 290px;margin-top: 0; margin-left: 40%; margin-bottom: 14%">
+		
+		<div class="x-mid" style="height: 220px;width: 290px; background-color: white;">
+			
+			<div class="input">
+					<div class="layui-form-item x-login-box">
+						<label for="username" class="layui-form-label"> <i
+							class="layui-icon">&#xe612;</i>
+						</label>
+						<div class="layui-input-inline">
+							<input type="text" id="userName" name="account" required=""
+								lay-verify="username" autocomplete="off" placeholder="用户名"
+								class="layui-input">
+						</div>
+					</div>
+					<div class="layui-form-item x-login-box">
+						<label for="pass" class="layui-form-label"> <i
+							class="layui-icon">&#xe628;</i>
+						</label>
+						<div class="layui-input-inline">
+							<input type="password" id="password" name="password" required=""
+								lay-verify="pass" autocomplete="off" placeholder="密码"
+								class="layui-input">
+						</div>
+					</div>
+					<div class="layui-form-item x-login-box" style="height: 10%;margin-left: 40%">
+						<label for="pass" class="layui-form-label"> 
+						<i
+							class="layui-icon"></i>
+						</label>
+						<div class="layui-input-inline">
+						<button  class="layui-btn" onclick="login()" lay-filter="save" lay-submit="">登
+							录</button>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+	<p style="color: #fff; text-align: center;">欢迎来到小童科技店铺后台</p>
+	
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script src="../layui/layui.js" charset="utf-8"></script>
+	<script src="../js/url.js" charset="utf-8"></script>
+	<script src="../js/cooke.js" charset="utf-8"></script>
+	<script charset="utf-8"  src="../js/token.js"></script>
+	<script type="text/javascript">
+	function login(){
+		console.log("login..........");
+		//登录验证window.open
+		//打开店铺页面携带的店铺id
+		$.post(
+			loginUrl,
+		    {
+				account:$("#userName").val(),
+				password:$("#password").val()
+		    },function(data){
+		    	console.log(data);
+		    	 if(data.code==200){
+		    		
+		    		 setCookie("token",data.data.token)
+					 setCookie("userId",data.data.userid)
+					 setCookie("username",data.data.username
+							 )
+		    		window.location.href='./index';
+		    		//存入cookie
+		    	}else{
+		    		alert(data.msg);
+		    	} 
+		    }
+		)
+		/* var storeId=1;
+		window.location.href=indexUrl+storeId; */
+		
+	}
+	 
+	</script>
+</body>
+
+</html>

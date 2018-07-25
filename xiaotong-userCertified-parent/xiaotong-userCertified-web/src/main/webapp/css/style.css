@@ -1,0 +1,1140 @@
+h1{
+    font-size: 18px;
+    margin-top:20px;
+    width:100%;
+    float: left;
+}
+.bg{
+    background-color: #e5e5e5;
+}
+.index1{
+    width:100%;
+    float: left;
+}
+.index1 h1{
+    font-size: 20px;
+    color: #010101;
+    /*padding-left:30px;*/
+}
+.index1 h1 img{
+    float: left;
+    width:25px;
+    height:25px;
+    margin-right: 10px;
+}
+.index1 h1 small{
+   font-size: 16px;
+    padding-left:20px;
+}
+.index1 h1 button{
+    float: right;
+    width:120px;
+    height:30px;
+    line-height: 30px;
+    border-radius: 6px;
+    padding:0 5px;
+    font-size: 14px;
+    margin:0;
+}
+.index1 ul{
+    width:100%;
+    margin-top:10px;
+    float: left;
+}
+.index1 ul li{
+    width:38%;
+    height:220px;
+    float: left;
+    background: #fff;
+    border-radius: 6px;
+}
+.index1 ul .liWs{
+    width:20%;
+    float: left;
+    background: #5fefc8;
+}
+.index1 ul .liC{
+    margin:0 2%;
+}
+.index1 ul li span{
+    width:100%;
+    float: left;
+    text-align: center;
+    padding-top:40px;
+    font-size: 28px;
+    color: #010101;
+}
+.index1 ul li p{
+    color: #999;
+    width:96%;
+    height:45px;
+    line-height: 45px;
+    border-bottom: 1px solid #999;
+    padding:0;
+    padding-left:4%;
+}
+.index1 ul li p img{
+    float: left;
+    width:15px;
+    height:17px;
+    margin-top:12px;
+    margin-right: 10px;
+}
+.index1 ul li ul{
+    width:100%;
+    float: left;
+    padding:30px 0;
+}
+.index1 ul li ul li{
+    width:33%;
+    float: left;
+    height:100%;
+    text-align: center;
+}
+.index1 ul li ul li b{
+    color: #fe6738;
+    font-size: 20px;
+    width:100%;
+    text-align: center;
+}
+.index1 ul li ul li small{
+    width:100%;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+}
+.index1 ul li ul li .smallColor{
+    color: #fe6738;
+    padding-top:5px;
+}
+.index1 ul li h2{
+    float: left;
+    padding-left:4%;
+}
+/*首页修改店铺名称弹框*/
+.modify{
+    width:400px;
+    float: left;
+    background: #fff;
+    border-radius: 6px;
+    margin:0 auto;
+    padding:15px;
+    position: fixed;
+    top:20%;
+    z-index: 9999;
+    left:50%;
+    display: none;
+    margin-left:-200px;
+}
+.modify p{
+    font-size: 16px;
+    color: #333;
+}
+.modify input{
+    width:100%;
+    float: left;
+    border:none;
+    line-height: 35px;
+    border-bottom: 1px solid #009999;
+    background: none;
+    margin-top:15px;
+}
+.modify span{
+    float: right;
+    margin-top:20px;
+}
+.modify span button{
+    padding:5px 10px;
+    border-radius:4px;
+    background: #009999;
+    border:none;
+    font-size: 14px;
+    color: #fff;
+    margin-left:20px;
+    cursor: pointer;
+}
+.modify span .btnBg{
+    background: #e5e5e5;
+}
+.modify strong{
+    float: left;
+  font-weight: normal;
+    font-size: 14px;
+    color: #666;
+    width:100%;
+    padding-top:10px;
+    cursor: pointer;
+}
+.modify strong img{
+    width:10px;
+    height:10px;
+    margin-right: 10px;
+    margin-top:-5px;
+}
+.strInput{
+    position: relative;
+    float: left;
+}
+.strInput input{
+    width:60%;
+    float: left;
+}
+.strInput input:nth-child(2){
+    position: absolute;
+    right:0;
+    border:none;
+    color: #fff;
+    width:35%;
+    font-size: 12px;
+    background-color: #009999;
+    border-radius: 4px;
+    margin-left:5%;
+}
+.shadow{
+    width:100%;
+    height:100%;
+    float: left;
+    position: fixed;
+    display: none;
+    top:0;
+    background: rgba(0,0,0,.3);
+    z-index: 55;
+}
+/*商品管理*/
+.commodityH3{
+    width:100%;
+    float: left;
+    margin:30px 0 15px;
+}
+.commodityH3 button{
+   /* width:136px;
+    height:30px;
+    line-height: 30px;*/
+    text-align: center;
+    background: none;
+    border:1px solid #ccc;
+    color: #666;
+    font-size: 14px;
+    border-radius: 20px;
+    margin-right: 20px;
+    padding: 3px 20px;
+}
+.commodityH3 .btnBgC{
+    background: #009999;
+    color: #fff;
+}
+.commodityH3 .btnR{
+    float: right;
+    border-radius: 4px;
+    border: none;
+    background: #009999;
+    color: #fff;
+}
+.commodityTbody tr td i{
+    width:20px;
+    height:20px;
+    display: block;
+    float: left;
+    background: url("../images/commodity1.png") no-repeat;
+
+}
+.commodityTbody tr{
+    cursor: pointer;
+}
+.commodityTbody .trChecked{
+   background: #eff5fb;
+}
+.commodityTbody .trChecked td .look{
+    color: #35a9ff!important;
+}
+.commodityTbody .trChecked td i{
+    width:20px;
+    height:20px;
+    display: block;
+    float: left;
+    background: url("../images/commodity1-1.png") no-repeat;
+    background-size: cover;
+}
+/*新建商品*/
+.h1Small{
+    font-size: 14px;
+    color: #999;
+    margin-top:10px;
+}
+.imgList{
+    width:100%;
+    float: left;
+    margin-top:10px;
+}
+.imgList img{
+    width:130px;
+    height:130px;
+    float: left;
+    margin-right:15px;
+}
+.imgList input{
+    float: left;
+    margin-top:100px;
+}
+/*.h1Top{
+    width:100%;
+    float: left;
+    margin: 20px 0 10px;
+}*/
+.detailsList{
+    width:100%;
+    float: left;
+    margin-top:10px;
+}
+.detailsList ul li{
+    float: left;
+    margin-right: 30px;
+    position: relative;
+   /* margin-bottom: 10px;*/
+}
+.detailsList ul li input{
+    width:150px;
+    float: left;
+    height:30px;
+    line-height: 30px;
+    padding-left:5px;
+    font-size: 12px;
+    border:1px solid #ccc;
+    background: #fff;
+    margin-bottom: 10px
+}
+.detailsList ul li .inputC{
+    width:15px;
+    height:15px;
+    float: left;
+    margin-top:8px;
+}
+.detailsList ul li .inputW{
+    width:100px;
+}
+.detailsList ul li span{
+    position: absolute;
+    right:28px;
+    top:7px;
+}
+.detailsList ul li p{
+    float: left;
+    padding:6px 10px 0 3px;
+}
+.detailsList ul li select{
+    width:150px;
+    float: left;
+    height:30px;
+    line-height: 30px;
+    font-size: 12px;
+    border:1px solid #ccc;
+    background: #fff;
+    padding-left:70px;
+}
+.detailsList ul li small{
+    position: absolute;
+    top:8px;
+    color: #999;
+    left:5px;
+}
+.detailsList h1{
+    width:100%;
+    float: left;
+    margin-top: 20px;
+}
+.detailsList h1 span{
+    float: left;
+    font-size: 14px;
+    padding-top:3px;
+    padding-right: 10px;
+}
+.detailsList h1 input{
+    float: left;
+    width: 50px;
+    height:25px;
+    line-height: 25px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.detailsList .h1Input input{
+    float: left;
+    width: 100px;
+    height:25px;
+    line-height: 25px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.detailsList h1 button{
+    float: left;
+    height:28px;
+    line-height: 28px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 12px;
+    border: none;
+    background: #009999;
+    color: #fff;
+    padding:0 5px;
+}
+.detailsList textarea{
+    width:78%;
+    height:100px;
+    padding:10px;
+}
+.buildH5{
+    width:100%;
+    float: left;
+    left:50%;
+    position: relative;
+    margin-left:-180px;
+    margin-top:20px;
+    margin-bottom:50px;
+}
+.buildH5 button{
+    width:100px;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    border:none;
+    margin-left:20px;
+    background: #009999;
+}
+#editor{
+    width:80%;
+    float: left;
+    background: #fff;
+}
+/*新建商品套餐*/
+.buildWrap{
+    width:100%;
+    float: left;
+    margin-top:10px;
+}
+.buildWrap div{
+    width:25%;
+    height:400px;
+    float: left;
+    overflow-y: scroll;
+    background: #fff;
+    border-radius: 8px;
+}
+.buildWrap div p{
+    width:100%;
+    float: left;
+    font-size: 14px;
+    border-bottom: 1px solid #ccc;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+}
+.buildWrap div span{
+    float: left;
+    width:100%;
+    display: block;
+    padding-top:10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.buildWrap div span i{
+    width:15px;
+    height:15px;
+    float: left;
+    margin:2px 5px 0px 10px;
+    background: url("../images/commodity3.png" ) no-repeat;
+    background-size: cover;
+}
+.buildWrap div .spanIChecked i{
+    width:15px;
+    height:15px;
+    float: left;
+    margin:2px 5px 0px 10px;
+    background: url("../images/commodity3-1.png" ) no-repeat;
+    background-size: cover;
+}
+.buildWrap .imgC{
+    float: left;
+    margin:225px 20px 0;
+}
+.buildWrap div span input{
+    width:50px;
+    border:none;
+    border-bottom: 1px solid #ccc;
+}
+.choice{
+    width:100%;
+    float: left;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fff;
+}
+.choice span{
+    float: left;
+    width:10%;
+    line-height: 30px;
+    font-size: 12px;
+}
+.choice .right{
+    width:90%;
+    float: left;
+}
+.choice .right span{
+    float: left;
+    width:10%;
+    line-height: 30px;
+}
+.choice .right ul{
+    width:90%;
+    float: left;
+}
+.choice .right ul li{
+    float: left;
+    line-height: 30px;
+}
+.choice .right ul li i{
+    width:15px;
+    height:15px;
+    display: block;
+    float: left;
+    background: url("../images/commodity1.png") no-repeat;
+    background-size: cover;
+    margin-top: 8px;
+    margin-right: 5px;
+}
+.choice .right ul .liChecked i{
+    width:15px;
+    height:15px;
+    display: block;
+    float: left;
+    background: url("../images/commodity1-1.png") no-repeat;
+    background-size: cover;
+}
+/*分类管理*/
+.tdImgClassification img{
+    width:18px;
+    height:18px;
+    margin-right: 5px;
+}
+/*订单管理*/
+#ulOrder{
+    width:100%;
+    float: left;
+    margin-bottom: 20px;
+}
+#ulOrder li{
+    width:23%;
+    height:150px;
+    float: left;
+    margin-right: 2%;
+    background: #8593f4;
+    border-radius: 6px;
+}
+#ulOrder li:nth-child(2){
+    background: #bd8bf0;
+}
+#ulOrder li:nth-child(3){
+    background: #fea89a;
+}
+#ulOrder li:nth-child(4){
+    background: #8ac3f9;
+}
+#ulOrder li span{
+    font-size: 12px;
+    color: #fff;
+    padding-left:20px;
+    text-align: left;
+    line-height: 30px;
+}
+#ulOrder li b{
+    font-size: 20px;
+    color: #fff;
+    padding-left:20px;
+}
+#ulOrderQuery{
+    width:100%;
+    float: left;
+    background: none;
+}
+#ulOrderQuery li{
+    width:100%;
+    height:50px;
+    line-height: 50px;
+    float: left;
+    background: none;
+}
+#ulOrderQuery li small{
+    float: left;
+    height:50px;
+    line-height: 50px;
+    margin-left: 20px;
+}
+#ulOrderQuery li .smallC{
+    margin:0 20px;
+}
+#ulOrderQuery li input{
+    float: left;
+    margin: 0 10px;
+    height:25px;
+    line-height: 25px;
+    margin-top:12px;
+}
+#ulOrderQuery li select{
+    width:80px;
+    float: left;
+    height:25px;
+    line-height:25px;
+    font-size: 12px;
+    margin-top:12px;
+}
+#lookBtn{
+    width: 60px;
+    height: 30px;
+    display: block;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    float: left;
+    background: #009688;
+    border: none;
+    left:50%;
+    margin: 30px 0 30px -30px;
+    position: relative;
+}
+/*订单详情*/
+#orderDetailsUl{
+    width:100%;
+    float: left;
+    background: #fff;
+    margin:10px 0 20px;
+    border:1px solid #ccc;
+}
+#orderDetailsUl li{
+    width:50%;
+    height:200px;
+    float: left;
+    border-radius: 0;
+}
+#orderDetailsUl li:nth-child(1){
+    width:48%;
+    border-right: 1px solid #ccc;
+}
+#orderDetailsUl li p{
+    width:90%;
+    float: left;
+    height:40px;
+    line-height: 40px;
+    padding: 0 5%;
+    border-bottom: 1px solid #ccc;
+    background-color: #f7f7f7;
+    color: #333;
+}
+#orderDetailsUl li span{
+    width:90%;
+    display: block;
+    padding:0 5%;
+    float: left;
+    padding-top:10px;
+}
+#orderDetailsUl li span small{
+    float: left;
+    font-size: 14px;
+    color: #666;
+    width:15%;
+}
+#orderDetailsUl li span .smallRight{
+    width:80%;
+    text-align: left;
+    padding-left:5%;
+}
+#orderDetailsUl li b{
+    display: block;
+    font-weight: normal;
+    text-align: center;
+    padding-top:40px;
+}
+#orderDetailsUl li b small{
+    font-size: 14px;
+}
+#orderDetailsUl li b img{
+    width:40px;
+    height:40px;
+    margin-right: 20px;
+}
+#orderDetailsUl li b button{
+    float: left;
+    position: relative;
+    left:50%;
+  /*  background: #e5e5e5;*/
+}
+#orderDetailsUl li b .btnB{
+    margin-left:-85px;
+    background: #79aaa5;
+}
+.orderTr td{
+    color: #666;
+}
+.orderTr td img{
+    width:80px;
+    height:80px;
+    float: left;
+}
+.orderTr td{
+    text-align: center;
+}
+.orderTr td span{
+    width:150px;
+    height:40px;
+    float: left;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:2;
+    overflow: hidden;
+    padding-top:20px;
+    color: #666!important;
+    padding-left:10px;
+}
+.orderTr .tdColor{
+    color: #009688;
+}
+.orderFoot{
+    width:96%;
+    float: left;
+    background: #fff;
+    margin-top:20px;
+    padding:2%;
+    margin-bottom: 40px;
+}
+.orderFoot p{
+    text-align: right;
+    width:100%;
+    line-height: 25px;
+    font-size: 14px;
+    color: #666;
+}
+/*用户管理*/
+#userH1 img{
+    width:32px;
+    height:26px;
+}
+.userTbody tr td span{
+    float: left;
+    margin-right: 10px;
+}
+.userTbody tr td i{
+    float: left;
+    margin-right: 5px;
+}
+.userTbody tr td small{
+    float: left;
+}
+.userTbody tr td .userImg1{
+    width:15px;
+    height:15px;
+    background: url("../images/app3.png") no-repeat;
+    background-size: cover;
+}
+.userTbody tr td .userImg2{
+    width:15px;
+    height:15px;
+    background: url("../images/app4.png") no-repeat;
+    background-size: cover;
+}
+.userTbody tr td .userImg3{
+    width:15px;
+    height:15px;
+    background: url("../images/app1.png") no-repeat;
+    background-size: cover;
+}
+.userTbody tr td .userImg4{
+    width:15px;
+    height:15px;
+    background: url("../images/app2.png") no-repeat;
+    background-size: cover;
+}
+.userTbody .userTrChecked{
+    background: #ebebeb;
+}
+.userTbody .userTrChecked td .userImg1{
+    width:15px;
+    height:15px;
+    background: url("../images/app3-1.png") no-repeat;
+    background-size: cover;
+}
+.userTbody .userTrChecked td .userImg4{
+    width:15px;
+    height:15px;
+    background: url("../images/app2-1.png") no-repeat;
+    background-size: cover;
+}
+.userP{
+    width:100%;
+    float: right;
+    margin-top:10px;
+}
+.userP button{
+    float: right;
+    background: #009999;
+    border:none;
+    color: #fff;
+    padding:5px 10px;
+    font-size: 12px;
+}
+
+
+
+
+.layui-layout-admin .layui-main1{
+    margin-left:0;
+}
+.layui-main1 a{
+    float: left;
+    padding:0;
+    margin:0;
+    left:0;
+}
+.layui-main1 a img{
+    width:268px;
+    height:80px;
+    margin:0;
+}
+.layui-nav-tree .layui-nav-child dd.layui-this, .layui-nav-tree .layui-this, .layui-nav-tree .layui-this>a, .layui-nav-tree .layui-this>a:hover{
+    background: #009688;
+}
+.layui-layout-admin .header{
+    height:80px;
+    line-height: 80px;
+}
+.layui-layout-admin .layui-side{
+    top: 85px;
+}
+.site-demo-title{
+    top:75px;
+}
+.layui-layout-admin .header{
+    border-bottom: 5px solid #13a99b;
+}
+/*
+.layui-nav .layui-nav-item a{
+    font-size: 16px;
+}
+.layui-nav-item a cite{
+    font-size: 20px;
+}*/
+#x-img tr span{
+    color: #fe6738;
+}
+#x-img .tdImg span{
+    color: #333;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+.layui-table2{
+    margin: 0!important;
+}
+.layui-table1{
+    float: left;
+    margin-top:20px!important;
+}
+.layui-table th{
+    font-size: 16px;
+    color: #010101;
+    font-weight: normal;
+}
+.index1 p{
+    padding:10px 0;
+    float: left;
+    padding-left:20px;
+}
+.index1 p{
+    float: left;
+}
+.index1 p span{
+    float: left;
+}
+.index1 p input{
+    width:150px;
+    float: left;
+    background: none;
+    height:20px;
+    line-height: 30px;
+    font-size: 12px;
+    padding-left:5px;
+    border: 1px solid #cccccc;
+    background: #fff;
+}
+.index1 p select{
+    float: left;
+    width:100px;
+    font-size: 12px;
+    height:20px;
+    line-height: 30px;
+    padding-left:5px;
+    background: none;
+    border: 1px solid #cccccc;
+    background: #fff;
+}
+.index1  button{
+    float: right;
+    width:60px;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    margin-top:13px;
+    margin-right: 20px;
+    background: #009688;
+    border:none;
+}
+.tdImg i{
+    width:15px;
+    height:15px;
+    float: left;
+    margin-right: 15px;
+    margin-left:5px;
+    margin-top:2px;
+}
+.tdImg b{
+    font-weight: normal;
+    float: left;
+}
+.appH2{
+    width:100%;
+    height:40px;
+    line-height: 40px;
+    float: left;
+}
+.appH2 button{
+    width:80px;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+    float: right;
+    color: #fff;
+    border:none;
+    background: #13a99b;
+}
+.x-img tr td p{
+    width:100%;
+    text-align: center;
+}
+.x-img tr td span{
+    text-align: center;
+    float: left;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.x-img tr td span b{
+    color: #333;
+    float: left;
+    font-weight: normal;
+}
+.x-img tr td span img{
+    float: left;
+    width:15px;
+    height:15px;
+    margin-top:3px;
+    margin-left:5px;
+}
+.appAdd{
+    width:100%;
+    float: left;
+    display: none;
+    margin-bottom: 30px;
+}
+.appAdd p{
+    width:100%;
+    float: left;
+    padding-bottom: 20px;
+}
+.appAdd p span{
+    width:8%;
+    display: block;
+    float: left;
+    padding-right: 10px;
+    padding-top:5px;
+}
+.appAdd p strong{
+    width: 300px;
+    float: left;
+    position: relative;
+}
+.appAdd p input{
+    width: 300px;
+    height:30px;
+    line-height: 30px;
+    float: left;
+    padding-right: 10px;
+    padding-left:10px;
+    font-weight: normal;
+    border:1px solid #ccc;
+}
+.appAdd p select{
+    width: 100px;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+    padding:0;
+    float: left;
+    border:1px solid #ccc;
+    margin-left:-30px;
+}
+.appAdd p .selectW{
+   margin-left:0;
+    margin-right: 38px;
+}
+.appAdd p .inputP{
+    width: 80px;
+    text-align: center;
+    padding:0;
+    margin-right: 50px;
+}
+.appAdd p .inputP1{
+    width: 138px;
+    text-align: center;
+    padding:0;
+    margin-right: 0;
+}
+.appAdd p .spanW{
+    width:30px;
+    text-align: center;
+    float: left;
+    color: #666;
+}
+.appAdd p strong img{
+    width:20px;
+    height:20px;
+    position: absolute;
+    top:5px;
+    left: 290px;
+}
+.addBtn strong{
+    width: 90% !important;
+    display: block;
+    margin-bottom: 10px;
+}
+.addBtn .strL{
+    margin-left:9%;
+}
+.addBtn .strL button{
+    width:50px;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+    float: left;
+    margin-left:270px;
+    background: #13a99b;
+    border:none;
+    color: #fff;
+    font-weight: normal;
+}
+.h2Btn{
+    width:100%;
+    float: left;
+    margin-top:30px;
+}
+.h2Btn button{
+    width:50px;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+    float: left;
+    background: #79aaa5;
+    border:none;
+    color: #fff;
+    font-weight: normal;
+    margin-right: 50px;
+}
+.h2Btn .btn1{
+    background:#13a99b ;
+    margin-left:200px;
+}
+.appAddNewAdvertisement{
+    width:94%;
+    float: left;
+    background: #fff;
+    padding:3%;
+}
+.appAddNewAdvertisement p span{
+   border-right: 1px solid #ccc;
+    margin-right: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.appAddNewAdvertisement .spanColor{
+    color: #13a99b;
+}
+.appAddNewAdvertisement .spanNone{
+    border:none;
+}
+.appAddNewAdvertisement small{
+    float: right;
+}
+.appAddNewAdvertisement small input{
+    width:100px;
+    border: 1px solid #13a99b;
+    border-radius: 4px;
+}
+.appAddNewAdvertisement small b{
+    font-weight: normal;
+    float: left;
+    color: #13a99b;
+    padding-top:8px;
+    padding-left:10px;
+    cursor: pointer;
+}
+.appAddNewAdvertisement tr{
+    text-align: center;
+}
+.appAddNewAdvertisement th{
+    text-align: center;
+}
+#app2{
+    width:90%;
+    display: none;
+    float: left;
+    padding:30px 5%;
+    border:1px solid #ccc;
+    margin-bottom: 20px;
+}
+#app2 p{
+    width:100%;
+    float: left;
+}
+#app2 p span{
+    float: left;
+    border:none!important;
+}
+#app2 input{
+    width:200px;
+    height:30px;
+    line-height: 30px;
+    border-radius: 4px;
+    padding-left:10px;
+    float: left;
+    border:1px solid #ccc;
+    margin-left:30px;
+}
+.layui-table td .tdImgB{
+    width:10px;
+    height:10px;
+    float: left;
+    margin-top:4px;
+    background: url("../images/checked.png") no-repeat;
+    background-size: cover;
+}
+
+
+.delInput{
+	cursor: pointer;
+	color: red;
+}
+
+
+
+
+
+

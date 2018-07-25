@@ -1,0 +1,74 @@
+html,body,div,ul,li,p,a,img,h1,h2 {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+}
+
+/*头部*/
+header {
+	width: 100%;
+	height: 80px;
+	background: #393d49;
+	border-bottom: 3px solid #13a99b;
+}
+
+header>div:first-child {
+	float: left;
+	width: 285px;
+	height: 100%;
+	background: url(../img/logo.png) no-repeat 20px center;
+	color: #fff;
+	line-height: 80px;
+	text-indent: 70px;
+	font-size: 20px;
+}
+
+header> div:last-child {
+	float: right;
+	margin-right: 30px;
+	line-height: 80px;
+	color: #fff;
+}
+header> div>a {
+	color: #fff;
+}
+
+/*内容*/
+section {
+	width: 100%;
+}
+h1 {
+	text-align: center;
+	margin-top: 50px;
+}
+
+ul {
+	display: flex;
+	margin-top: 40px;
+	padding: 0 100px;
+}
+ul>li {
+	width: 380px;
+	height: 340px;
+	line-height: 340px;
+	font-size: 35px;
+	text-align: center;
+	border-radius: 15px;
+}
+ul>li:first-child {
+	background: #8ea0ee;
+}
+ul>li:nth-child(2) {
+	background: #a898f2;
+}
+ul>li:not(first-child) {
+	margin-right: 34px;
+}
+ul>li>a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/xtyj_home.css"/>
+	</head>
+	<body>
+		<header>
+			<div>
+				小童幼教
+			</div>
+			<div>
+				<a href="#">登陆账号名 :<span id ='username'></span></a>
+				|
+				<a onclick="goLogin()">退出</a>
+			</div>
+		</header>
+		
+		<section>
+			<h1>选择登陆入口</h1>
+			<ul>
+				<li>
+					<a onclick="goAdminIndex()">总后台</a>
+				</li>
+				<li>
+					<a href="#">知识</a>
+				</li>
+			</ul>
+		</section>
+	</body>
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	
+	<script type="text/javascript" src="../js/url.js"></script>
+	<script type="text/javascript" src="../js/cooke.js"></script>
+	<script type="text/javascript">
+	function goAdminIndex () {
+		 //AdminIndexUrl
+		
+		 var userId = getCookie("userId");
+		 var token = getCookie("token");
+		 var username = getCookie("username");
+		 $("#username").html(username);
+		 //alert(token+"跳转总后台登录页"+userId);
+		 location.href=AdminIndexUrl+'?token='+token+'&userId='+userId+'&username='+username;
+	}
+	function goLogin(){
+		 location.href=tologinUrl;
+	}
+	</script>
+</html>

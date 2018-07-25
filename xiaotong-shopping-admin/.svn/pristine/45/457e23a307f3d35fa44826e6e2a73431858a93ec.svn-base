@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="shopping-admin-interface:war exploded">
+    <output-path>$PROJECT_DIR$/shopping-admin-interface/target/shopping-admin-interface</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="shopping-admin-interface" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/shopping-admin-interface/target/shopping-admin-interface/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="shopping-admin-interface/web/Web" />
+    </root>
+  </artifact>
+</component>
